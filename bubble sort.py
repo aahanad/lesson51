@@ -6,6 +6,8 @@ def sort(nums):
     while swapped==True:
         swapped=False
         for i in range(1,n-1):
+            #for ascending order
+            # if nums[i-1]<nums[i]:
             if nums[i-1]>nums[i]:
                 temp=nums[i]
                 nums[i]=nums[i-1]
